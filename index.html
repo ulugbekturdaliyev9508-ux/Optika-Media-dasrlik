@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Darsliklar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .btn {
+      display: block;
+      width: 500px;
+      margin: 10px auto;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 80%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Media Darsliklar</h1>
+
+  <!-- Tugmalar -->
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/05U7PYIZ0-w')">
+    Innovatsion laboratoriya
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/8LvqFyEEJoA')">
+    Laboratoriya jamlanmasidagi qurilmalar haqida
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/MZxKjGtm0jk')">
+    1 laboratoriya ishi Yassi ko‘zgu yordamida yorug‘likning qaytishini o‘rganish
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/TiQ_Sy1P9Gg')">
+    2 laboratoriya ishi Shisha prizma yordamida yorug‘likning spektrga ajralishini o‘rganish
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/kJ9I5HKsQNE')">
+    3 laboratoriya ishi Shishaning nur sindirish ko‘rsatkichini aniqlash
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/oEFryfABbt4')">
+    4 laboratoriya ishi Linza yordamida tasvir hosil qilish
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/ecEGeahL9N0')">
+    5-laboratoriya ishi Difraksion panjara yordamida yorug‘likning to‘lqin uzunligini aniqlash
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/TXGbwr26QYQ')">
+    6-laboratoriya ishi Yoritilganlikning yorug‘lik kuchiga bog‘liqligi
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/mP86FNxfLWo')">
+    1-namoyish tajriba Yupqa linza yordamida turli tasvirlarni yasash
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/dlj78HgLc88')">
+    2-namoyish tajriba Difraksion spektr
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/6xpJhmF3Og4')">
+    3-namoyish tajriba Spektral yorug‘lik nurining yutilishi
+  </a>
+
+  <a href="#" class="btn" onclick="playVideo('https://www.youtube.com/embed/cTwqMOSCZSA')">
+    4-namoyish tajriba Yorug‘likning qutblanishi
+  </a>
+
+  <!-- Video joyi -->
+  <iframe id="videoFrame" src="" allowfullscreen></iframe>
+
+  <script>
+    function playVideo(url) {
+      document.getElementById("videoFrame").src = url;
+    }
+  </script>
+
+</body>
+</html>
